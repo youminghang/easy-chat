@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package user;
+option go_package="./user";
+
+// 定义服务名
+service User {
+    // 定义rpc方法
+    rpc GetUser(GetUserReq) returns (GetUserResp);
+}
+
+message GetUserReq {
+    // 属性的类型 属性名 = 标识符
+    string id = 1;
+}
+message GetUserResp {
+    string id = 1;
+    string name = 2;
+    string phone = 3;
+}
