@@ -1,3 +1,3 @@
 # easy-chat
 
-hello 你好git12312312312312312312312
+hello 你好
